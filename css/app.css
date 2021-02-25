@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem;
+}
+
+.card {
+    min-height: 80vh;       
+    width: 35rem;
+    box-shadow: 0 10px 10px rgba(0,0,0, .2), 0 0 30px rgba(0,0,0, .2);
+    border-radius: 20px;
+    padding: 2rem;  
+}
+
+.sneaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 12rem;
+}
+
+.sneaker img {
+    width: 15rem;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background: linear-gradient( 
+        43deg, 
+        rgb(13, 76, 139),
+        rgb(245, 85, 73),
+        157%, 
+        rgb(108, 87, 126)
+    ); 
+    box-shadow: 2px 2px 2px rgba(0,0,0, .1), 
+                2px 5px 5px rgba(0,0,0, .2);
+    border-radius: 50%; 
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .2);
+}
+.info h3 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.size {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.size button {
+    background: none;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0 5px 10px rgba(0,0,0, .3);
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(13, 76, 139);                                              
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy button {
+    background: none;
+    border: none;
+    padding: 1.2rem;
+    background-color: slateblue;
+    width: 80%;
+    border-radius: 5px;
+    color:snow;
+    box-shadow: 0 5px 10px rgba(0,0,0, .1), 0 5px 10px rgba(0,0,0, .2);
+    transition: .1s linear;
+}
+.buy button:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0, .2), 0 5px 10px rgba(0,0,0, .5);
+}
+.buy button:focus {
+    transform: translateY(-2px);
+    border: 1px solid  slateblue;
+x
+}
