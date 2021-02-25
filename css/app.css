@@ -5,6 +5,7 @@
 }
 
 body {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +15,7 @@ body {
 }
 
 .container {
+    perspective: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +24,7 @@ body {
 }
 
 .card {
+    transform-style: preserve-3d;
     min-height: 80vh;       
     width: 35rem;
     box-shadow: 0 10px 10px rgba(0,0,0, .2), 0 0 30px rgba(0,0,0, .2);
@@ -62,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem 1rem 0 1rem;
     text-align: center;
 }
 .info h1 {
@@ -78,7 +81,7 @@ body {
 .size {
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 1rem 1rem  1rem;
 }
 .size button {
     background: none;
@@ -88,7 +91,12 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0, .3);
     border-radius: 50%;
     cursor: pointer;
-    color: rgb(13, 76, 139);                                              
+    color: slateblue;                                             
+}
+
+.size button.active {
+    background:  slateblue;
+    color:silver;
 }
 
 .buy {
