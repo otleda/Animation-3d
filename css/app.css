@@ -16,6 +16,7 @@ body {
 
 .container {
     perspective: 1000px;
+    -moz-perspective: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +26,9 @@ body {
 
 .card {
     transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     min-height: 80vh;       
-    width: 35rem;
+    max-width: 35rem;
     box-shadow: 0 10px 10px rgba(0,0,0, .2), 0 0 30px rgba(0,0,0, .2);
     border-radius: 20px;
     padding: 2rem;  
